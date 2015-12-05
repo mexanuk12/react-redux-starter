@@ -5,6 +5,9 @@ import routes                   from '../routes';
 import DevTools                 from './DevTools';
 import { createDevToolsWindow } from '../utils';
 
+import Header from './Header';
+import Nav from './Nav';
+
 export default class Root extends React.Component {
   static propTypes = {
     history : React.PropTypes.object.isRequired,
@@ -31,10 +34,11 @@ export default class Root extends React.Component {
     return (
       <Provider store={this.props.store}>
         <div>
-          
-          <Router history={this.props.history}>
-            {routes}
-          </Router>
+          <Header></Header>
+          <div className='wrapper'>
+            <Nav></Nav>
+            <Router history={this.props.history}>{routes}</Router>
+          </div>
           {this.renderDevTools()}
         </div>
       </Provider>
