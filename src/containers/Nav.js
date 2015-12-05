@@ -1,23 +1,17 @@
 import React from 'react';
-
+import { Link } from 'react-router';
 
 class Nav extends React.Component {
-  static propTypes = {
-    title: React.PropTypes.string
-  }
-
-  static defaultProps = {
-    title : '默认标题'
-  }
-
   render () {
-    // const { title } = this.props;
     return (
-      <aside className="navbar">
+      <aside className='navbar'>
         <nav>
           <ul>
             <li>
-              <a href="#">{this.props.title}</a>
+              <Link to='home'>Index</Link>
+            </li>
+            <li>
+              <Link to='about'>About</Link>
             </li>
           </ul>
         </nav>

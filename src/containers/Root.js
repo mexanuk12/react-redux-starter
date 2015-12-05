@@ -7,13 +7,15 @@ import { createDevToolsWindow } from '../utils';
 
 import Header from './Header';
 import Nav from './Nav';
+import AboutView from 'views/AboutView';
 
 export default class Root extends React.Component {
   static propTypes = {
     history : React.PropTypes.object.isRequired,
     store   : React.PropTypes.object.isRequired,
     debug   : React.PropTypes.bool,
-    debugExternal : React.PropTypes.bool
+    debugExternal : React.PropTypes.bool,
+    children: React.PropTypes.object.isRequired
   }
 
   static defaultProps = {

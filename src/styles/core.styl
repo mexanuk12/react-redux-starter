@@ -3,6 +3,12 @@
 @require 'layout'
 
 body, 
+td, 
+th  
+  font-size: 13px
+  font-family: Myriad Set Pro, Arial
+
+body, 
 div, 
 dl, 
 dt, 
@@ -28,5 +34,49 @@ table,
 iframe , 
 p, 
 img 
-    padding: 0 
-    margin: 0
+  padding: 0 
+  margin: 0
+  
+input, 
+button, 
+textarea, 
+select, 
+optgroup, 
+option  
+  font-family: inherit
+  font-size: inherit
+  font-style: inherit
+  font-weight: inherit
+    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: normal
+
+    
+// 清除浮动
+.clearfix:after 
+  clear: both
+  content: ""
+  display: block
+  height: 0
+  visibility: hidden
+
+
+.clearfix 
+  display: inline-block
+
+
+* + html .clearfix 
+  height: 1%
+
+
+.clearfix 
+  display: block
+
+
+.clearfloat 
+  display: inline-block

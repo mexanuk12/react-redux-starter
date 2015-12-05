@@ -25,7 +25,7 @@ export class HomeView extends React.Component {
   render () {
     return (
       <div className='container text-center'>
-        <h1>Welcome to the React Redux Starter Kit</h1>
+        <h1>Hello, world.</h1>
         <h2>Counter: {this.props.counter}</h2>
         <button className='btn btn-default'
                 onClick={this.props.actions.increment}>
