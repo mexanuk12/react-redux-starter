@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/Button';
 
 
 class Header extends React.Component {
@@ -16,6 +17,7 @@ class Header extends React.Component {
       <header>
         <h1>{this.props.title}</h1>
         <div className='clearfix'>
+          <Button></Button>
           <div className='business'>
             <img src="http://wx.qlogo.cn/mmopen/IbQhd2Y9oKc2zOTLXD4TZqVVh3BAHWLuGed8lcGJYgVsDaXTLOJp1IDWEZtEyUzEVLSLqGdDGEkdekGIKXCMHQ/0" alt="星巴克" />
             <dl>

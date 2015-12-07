@@ -6,6 +6,7 @@ import Root                   from './containers/Root';
 import configureStore         from './store/configureStore';
 
 const target  = document.getElementById('root');
+// const target = document.body;
 const history = createBrowserHistory();
 const store   = configureStore(window.__INITIAL_STATE__, __DEBUG__);
 
