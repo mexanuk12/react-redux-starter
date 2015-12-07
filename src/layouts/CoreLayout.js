@@ -1,5 +1,7 @@
 import React from 'react';
 import 'styles/core.styl';
+import Nav from './Nav';
+import Header from './Header';
 
 export default class CoreLayout extends React.Component {
   static propTypes = {
@@ -8,8 +10,10 @@ export default class CoreLayout extends React.Component {
 
   render () {
     return (
-      <div className='page-container'>
-        <div className='view-container'>
+      <div>
+        <Header></Header>
+        <div className='wrapper'>
+          <Nav></Nav>
           {this.props.children}
         </div>
       </div>

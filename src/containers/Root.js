@@ -5,9 +5,9 @@ import routes                   from '../routes';
 import DevTools                 from './DevTools';
 import { createDevToolsWindow } from '../utils';
 
-import Header from './Header';
-import Nav from './Nav';
-import AboutView from 'views/AboutView';
+// import Header from './Header';
+// import Nav from './Nav';
+// import AboutView from 'views/AboutView';
 
 export default class Root extends React.Component {
   static propTypes = {
@@ -36,14 +36,18 @@ export default class Root extends React.Component {
     return (
       <Provider store={this.props.store}>
         <div>
-          <Header></Header>
-          <div className='wrapper'>
-            <Nav></Nav>
-            <Router history={this.props.history}>{routes}</Router>
-          </div>
+          <Router history={this.props.history}>{routes}</Router>
           {this.renderDevTools()}
         </div>
       </Provider>
     );
   }
 }
+
+
+// <Header></Header>
+// <div className='wrapper'>
+//   <Nav></Nav>
+//   <Router history={this.props.history}>{routes}</Router>
+// </div>
+// {this.renderDevTools()}

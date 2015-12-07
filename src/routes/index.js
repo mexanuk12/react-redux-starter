@@ -6,11 +6,10 @@ import AboutView             from 'views/AboutView';
 
 // import { render } from 'react-dom';
 
-
 export default (
-  <Route name='home'        component={CoreLayout} path='/'>
+  <Route component={CoreLayout} path='/'>
     <IndexRoute component={HomeView} />
-    <Route name='about'      component={AboutView}  path='/about' />
+    <Route component={AboutView} path='/about' />
   </Route>
 );
 
